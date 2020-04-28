@@ -93,21 +93,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://needle-tools.github.io',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
-      }
-    }
+    'gatsby-transformer-sharp'
   ],
 }

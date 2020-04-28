@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'needle',
     description: 'description',
-    siteUrl: 'https://needle-tools.github.io/',
+    siteUrl: 'https://needle.tools',
     author: "needle",
     twitter: "",
     adsense: "",
@@ -86,6 +86,14 @@ module.exports = {
         mergeCachingHeaders: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://needle.tools',
+        sitemap: 'https://www.example.com/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '/' }]
+      }
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
@@ -94,5 +102,5 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
     'gatsby-transformer-sharp'
-  ],
+  ]
 }

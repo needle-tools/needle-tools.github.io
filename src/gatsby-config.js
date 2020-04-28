@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
-    adsense: '',
+    title: 'needle',
+    description: 'description',
+    siteUrl: 'https://needle-tools.github.io/',
+    author: "needle",
+    twitter: "",
+    adsense: "",
   },
   pathPrefix: '/',
   plugins: [
@@ -94,5 +94,20 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://needle-tools.github.io',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    }
   ],
 }

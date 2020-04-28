@@ -29,7 +29,7 @@ class Profile extends React.Component {
               <div>
                 <a
                   ref="twButton"
-                  href="https://twitter.com/jaxx2104"
+                  href="https://twitter.com/needle"
                   className="twitter-follow-button"
                   data-show-count="false"
                 >

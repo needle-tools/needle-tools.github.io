@@ -13,6 +13,12 @@ Tailor-Made Tools for Unity
 - [**Better Unity Fogbugz**](#better-unity-fogbugz)  
 *Chrome Extension to make Bug Cases more useful*
 
+- [**☠⚔ Try Hard™ ✂⚠**](#try-hard)  
+*Collection of Hacks and Workarounds. Not for the faint of heart.*
+
+- [**Permissions**](#permissions)  
+*(Unreleased) File Permission Management right in Unity.*
+
 ## AR Desktop
 
 AR Desktop is a suite of tools that allow local testing and development of AR Foundation applications directly inside Unity Editor.
@@ -44,9 +50,9 @@ After years of non-existant tooling for AR development, Unity is now working on 
 However, from the limited available public information, it seems that the design goals for MARS are very different to what we're trying to achieve with AR Desktop:
 
 |   | AR Desktop    | MARS  |
-| -: | -:             | :-:     |
-| Project Setup | drop-in for AR Foundation projects | wrapper around AR Foundation, requires specific project structure |
-| Coding Style | 
+| - | -             | -     |
+| Project Setup | Drop-in for AR Foundation projects | Wrapper around AR Foundation, requires specific project structure |
+| General Approach | Only provides a simulation back end. Does not make any assumptions about what and how you're building. | Does a lot of hand holding. Suited for beginners. Might get in the way for people who know exactly what they want to do. |
 
 ------------
 
@@ -90,19 +96,37 @@ With a single button, you can switch a remote package to a local source (e.g. gi
 
 ---
 ### Asset Testing
-Asset testing helps finding problems in project assets fast and early supporting a wide range of built-in (but also extensible) tests that are easy to setup and configure.
+Asset testing helps finding problems in project assets fast and early. It comes with a wide range of built-in tests that are easy to setup, configure and extend.
+
+The UI fits seamlessly into Unity as if it always had been there.
 
 ---
 ## Better Unity Fogbugz
+
 Better Unity Fogbugz is a Chrome Extension that improves the usefulness and usablity of Unity's bug tracker system.
+
+[Install Now - Chrome Web Store](https://chrome.google.com/webstore/detail/better-unity-fogbugz/mhhihgagfmlmgdjijippdlabhnmifacj)
 
 We created it for an anniversary - herbst's 200th submitted Unity bug. It's already proven very helpful in following up with the QA teams on specific bugs, seeing which cases have or haven't got an answer, and seeing which Issues are linked to which case.
 
 Better Unity Fogbugz is available for free on the Chrome Web Store.
 
 ### FAQ
-Q: I would like to use Better Unity Fogbugz on mobile.
 
-A: While Chrome for Android and Chrome for iOS do not support Extensions, there are Chromium-based browsers that do - one of them is the Kiwi Browser.
+**Q: I would like to use Better Unity Fogbugz on mobile.**
+**A:** While Chrome for Android and Chrome for iOS do not support Extensions, there are Chromium-based browsers that do - one of them is the Kiwi Browser.
 
-[1]:
+**Q: How does this work?**  
+**A:** This extension basically crawls all your cases when you have one of them open. For each of them, it extracts all referenced IssueTracker links and shows them; and counts how many back-and-forth conversations have happened so far.
+
+## ☠⚔ Try Hard™ ✂⚠
+
+This is a collection of dark but pretty Unity tips and tricks that we found over the years. You'll read about
+- how to access all internal namespaces
+- how to inject code into UnityEngine and UnityEditor, the easy way
+- how to enable development mode in the editor
+- how to crash Unity in 1,2,3 simple steps
+- how to corrupt your Library
+
+## Permissions
+(not released yet)

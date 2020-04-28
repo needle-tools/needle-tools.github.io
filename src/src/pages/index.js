@@ -1,21 +1,67 @@
-import React from "react"
-import { Link } from "gatsby"
+import { graphql } from 'gatsby'
+import React from 'react'
+import get from 'lodash/get'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Post from 'templates/post'
+import Meta from 'components/meta'
+import Layout from 'components/layout'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>test 123</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const BlogIndex = ({ data, location }) => {
+  const posts = get(data, 'remark.posts')
+  return (
+    <Layout location={location}>
+      <Meta site={get(data, 'site.meta')} />
+      {posts.map(({ post }, i) => (
+        <Post
+          data={post}
+          options={{
+            isIndex: true,
+          }}
+          key={i}
+        />
+      ))}
+    </Layout>
+  )
+}
 
-export default IndexPage
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      meta: siteMetadata {
+        title
+        description
+        url: siteUrl
+        author
+        twitter
+        adsense
+      }
+    }
+    remark: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      posts: edges {
+        post: node {
+          html
+          frontmatter {
+            layout
+            title
+            path
+            category
+            tags
+            description
+            date(formatString: "YYYY/MM/DD")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

@@ -101,6 +101,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
-    'gatsby-transformer-sharp'
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-cname'
   ]
 }

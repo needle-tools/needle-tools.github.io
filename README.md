@@ -1,5 +1,49 @@
-# NEEDLE
-Tailor-Made Tools for Unity
+# NEEDLE Tailor-Made Tools for Unity
+
+---
+
+## Order of releases (TBD)
+
+1. **Better Unity Fogbugz**  
+Free, open source on GitHub  
+*already released*
+
+1. **AR Desktop**  
+Free for non-commercial use.  
+Open source on GitHub (with specific license)  
+Will (probably/maybe) be superseded by MARS, but maybe not  
+.  
+*works good enough for release, saves time already*
+
+1. **Try Hard**  
+Gain interest  
+Show fancy Unity stuff  
+What is our goal with those??  
+.  
+*Medium blog posts for now?*
+
+1. **Package Tools**  
+Free for non-commercial use.  
+Commercial licenses available.  
+AssetStore 45$?  
+Way to earn money: consulting for in-house package development  
+.  
+*useful for production, but we either need to kick features out for release (notifications / slack bot) or put more work in it*
+
+1. **Structure**  
+This will probably be the **CASH COW** and the asset we can most clearly earn money with.  
+$65 in AssetStore (tbd)  
+Additionally: constulting work.  
+.  
+*needs clear distinction between Analysis and Asset Tests*
+
+1. **Permissions / Unity CI / ...**  
+.  
+*lets see if we have still time when we do maintenance for the above*
+
+---
+
+## Main Menu
 
 - [**AR Desktop**](#ar-desktop)  
 *Non-invasive AR Foundation mock and simulation system*
@@ -11,13 +55,20 @@ Tailor-Made Tools for Unity
 *Asset Testing and Analysis for Unity projects*
 
 - [**Better Unity Fogbugz**](#better-unity-fogbugz)  
-*Chrome Extension to make Bug Cases more useful*
-
-- [**☠⚔ Try Hard™ ✂⚠**](#try-hard)  
-*Collection of Hacks and Workarounds. Not for the faint of heart.*
+*Chrome Extension to make Bug Cases more useful.  
+Yes, we find a lot of bugs.*
 
 - [**Permissions**](#permissions)  
-*(Unreleased) File Permission Management right in Unity.*
+*(Unreleased) File Permission Management, right in Unity.*
+
+- [**☠⚔ Try Hard™ ✂⚠**](#try-hard)  
+*Collection of Hacks and Workarounds.  Not for the faint of heart.  
+Note: You are not allowed to read this in your function as Unity employee (feel free to read it when not at work).*
+
+- [**Consulting**](#consulting)  
+*TODO: Find a cooler name for this*
+
+---
 
 ## AR Desktop
 
@@ -119,6 +170,7 @@ Better Unity Fogbugz is available for free on the Chrome Web Store.
 **Q: How does this work?**  
 **A:** This extension basically crawls all your cases when you have one of them open. For each of them, it extracts all referenced IssueTracker links and shows them; and counts how many back-and-forth conversations have happened so far.
 
+---
 ## ☠⚔ Try Hard™ ✂⚠
 
 This is a collection of dark but pretty Unity tips and tricks that we found over the years. You'll read about
@@ -128,5 +180,10 @@ This is a collection of dark but pretty Unity tips and tricks that we found over
 - how to crash Unity in 1,2,3 simple steps
 - how to corrupt your Library
 
+---
 ## Permissions
 (not released yet)
+
+---
+## Consulting
+Contact us to talk about your unique challenges.

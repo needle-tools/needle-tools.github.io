@@ -1,0 +1,34 @@
+body {
+    background-color:#eee;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom:15vw;
+    background-image: url("cacti.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 50vw auto;
+}
+
+.logo {
+    font-family: 'Fira Code', monospace;
+    margin-left:-1.45em;
+}
+
+.logo a {
+    text-decoration: none;
+    color:#ff9800;
+}
+
+.logo a:visited {
+    color:inherit;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin-bottom:25vw;
+        background-size: 80vw;
+    }
+
+    .logo {
+        margin-left:0em;
+    }
+}

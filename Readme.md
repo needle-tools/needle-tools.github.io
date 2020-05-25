@@ -1,4 +1,4 @@
-## <span class="logo">!=</span>needle
+## <span class="logo"><a href="https://needle.tools">!=</a></span>needle
 > Tailor-made tooling for Unity Developers.  
 > Seamless integration, minimally invasive.
 
@@ -6,7 +6,7 @@
 Repository group with all unity packages,  
 but with history and changelogs.  
 
-<b>[Needle Mirror on GitHub](needle-mirror.github.com)</b>
+<b>[Needle Mirror on GitHub](https://needle-mirror.github.io)</b>
 
 ### better fogbugz
 Chrome Extension to improve viewing  

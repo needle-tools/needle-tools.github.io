@@ -18,10 +18,6 @@ body {
     color:#ff9800;
 }
 
-.logo a:visited {
-    color:inherit;
-}
-
 @media (max-width: 1000px) {
     body {
         margin-bottom:25vw;

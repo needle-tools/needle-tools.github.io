@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
+  <title>needle — tools for unity</title>
+  <link rel="stylesheet" type="text/css" href="css/splendor.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- <a href="https://api.github.com/orgs/needle-mirror/repos">API Example</a> -->
+  <div id="content"></div>
+  <div id="fixed-sidebar"><div id="changelog"></div></div>
+  
+  <script src="js/linkParser.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- <script src="https://unpkg.com/browse/dompurify/dist/purify.min.js"></script> -->
+  <script>
+    var baseUrl = 'https://github.com/needle-mirror/';
+    var rawUrl = 'https://raw.githubusercontent.com/needle-mirror/';
+
+    function fetchPage(href) {
+        fetch(href)
+            .then(response => response.json())
+            .then((data) => {
+                let content = document.getElementById('content');
+                let packageSet = new Set();
+                //console.log(data);
+                for(let version in data.versions) {
+                    //console.log(version);
+                    data.versions[version].searchablePackages.forEach((x) => packageSet.add(x));
+                }
+                console.log("set: " + packageSet);
+                [...packageSet].sort().map((x) => {
+                    let p = document.createElement("p");
+                    p.innerHTML = '<a href="' + rawUrl + x + "/master/" + "CHANGELOG.md" + '">' + x + '</a>';
+                    return p;
+                })
+                .forEach((x,y) => {
+                    content.appendChild(x);
+                });
+            });
+    }
+
+    var prev = null;
+
+    function loadDocument(el) {
+        let href = el.getAttribute('href');
+        let content = document.getElementById('changelog');
+        content.innerHTML = marked('#### LOADING');
+        if(prev != null)
+            prev.classList.remove('selected');
+            prev = el;
+
+            fetch(href)
+            .then(response => response.text())
+            .then((data) => {
+                // always just get the latest result
+                if(el != prev)
+                    return;
+
+                let content = document.getElementById('changelog');
+                content.innerHTML = "<p>" + el.innerHTML + "</p>" + marked(data);
+                prev.classList.add('selected');
+            });
+    }
+
+    function setup() {
+        let content = document.getElementById('content');
+        
+        let func = function(event) {
+            event = event || window.event;
+            var el = event.target || event.srcElement;
+            
+            if (el instanceof HTMLAnchorElement)
+            {
+                loadDocument(el);
+            }
+
+            event.preventDefault();
+        }
+
+        content.addEventListener('mouseover', func);
+        content.addEventListener('click', func);
+    }
+
+    fetchPage('https://prefrontalcortex.de/fwd/pacman/');
+    setup();
+  </script>
+</body>
+</html>

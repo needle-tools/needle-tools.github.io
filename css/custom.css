@@ -61,3 +61,7 @@ body {
 a.selected {
     font-weight: bold;
 }
+
+#content.searching p.hidden {
+    display:none;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
+  <title>needle — tools for unity</title>
+  <link rel="stylesheet" type="text/css" href="css/splendor.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+</head>
+<body>
+  <a href="https://api.github.com/orgs/needle-mirror/repos">API Example</a>
+  <div id="content"></div>
+  <script src="js/linkParser.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- <script src="https://unpkg.com/browse/dompurify/dist/purify.min.js"></script> -->
+  <script>
+    function fetchPage(href) {
+        fetch(href)
+            .then(response => {
+                console.log(response.headers);
+                let links = octopage.parser(response.headers.get('Link'));
+                if(links.next != null)
+                    fetchPage(links.next);
+                return response.json();
+            })
+            .then((data) => {
+                let content = document.getElementById('content');
+                data
+                .map((x) => {
+                    let p = document.createElement("p");
+                    p.innerHTML = '<a href="">' + x.name + '</a>';
+                    return p;
+                })
+                .forEach((x,y) => {
+                    content.appendChild(x);
+                });
+        });
+    }
+
+    fetchPage('https://api.github.com/orgs/needle-mirror/repos');
+  </script>
+</body>
+</html>

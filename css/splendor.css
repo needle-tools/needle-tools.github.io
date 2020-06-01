@@ -16,6 +16,10 @@
     a[href]:after {
       content: " (" attr(href) ")";
     }
+
+    a {
+      word-break: break-all;
+    }
   
     abbr[title]:after {
       content: " (" attr(title) ")";

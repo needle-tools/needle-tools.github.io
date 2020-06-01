@@ -31,7 +31,7 @@ LMB <span class="inline-image">![Left Mouse Button](img/left-click.svg)</span> t
 The same works for Point Clouds.  
 (Tracked 3D Objects Coming Soon™)
 
-#### Want to test against a more complicate scenery?
+#### Want to test against a more complicated scenery?
 - add your geometry, ideally as Prefab
 - add a SimulatedReality component to it
 - press Play

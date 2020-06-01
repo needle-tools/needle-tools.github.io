@@ -1,4 +1,4 @@
-## <span class="logo"><a href="../">!=</a></span>ar simulation
+## <span class="logo"><a href="../">!=</a></span> ar simulation
 > Build AR apps with confidence.  
 Iterate fast, right in Editor.  
 Non-invasive, drop-in solution.  
@@ -9,21 +9,9 @@ ARSimulation is a custom XR backend built on top of the [XR plugin architecture]
 It basically allows you to fly around in the Editor and test out your AR app, without having to change any code or structure. Import the package and go.
 
 [![Zero Setup](img/simple-explanation.gif)](https://youtu.be/3b0rXkKGPF8)
-*This scene uses only ARFoundationSamples code. Currently supported features are marked orange.*
+*This scene uses only ARFoundationSamples code.*
 
 Because it's just another XR Plugin, it works with your existing app, ARFoundation, XR Interaction Toolkit, and even MARS. Zero code changes or setup needed!
-
-#### Technical Stuff
-
-ARSimulation is a XR Plugin that works with Unity's XR SDK infrastructure and thus plugs right into ARFoundation and other systems in the VR/AR realm inside Unity. 
-
-![XR Architecture - ARSimulation](img/XRArchitecture-ARSimulation.svg)
-
-This architecture has some advantages:
-- ARSimulation will not clutter your project
-- it does not show up at all in your compiled app (otherwise it's a bug)
-- easier to maintain with future ARFoundation changes
-- requires zero changes 🤞 for working with other plugins that use ARFoundation
 
 ### Quick Start
 - Add the ARSimulation package to your project
@@ -37,10 +25,10 @@ LMB <span class="inline-image">![Left Mouse Button](img/left-click.svg)</span> t
 - drop SimulatedPlane prefab into the scene in Edit or Play Mode
 - move and adjust as necessary  
 
-[Custom Planes](https://youtu.be/I5LUYohV8oI)  
-[Runtime Adjustments](https://youtu.be/eS9v0dSpYQk)
+[Video: Custom Planes](https://youtu.be/I5LUYohV8oI)  
+[Video: Runtime Adjustments](https://youtu.be/eS9v0dSpYQk)
 
-The same works for Point Clouds!
+The same works for Point Clouds.  
 (Tracked 3D Objects Coming Soon™)
 
 #### Want to test against a more complicate scenery?
@@ -50,7 +38,7 @@ The same works for Point Clouds!
 - done.
 - (background camera image injection is experimental, but regular geometry "just works")
 
-[Complex Environment Simulation](https://youtu.be/nPvPdRppIpY)
+[Video: Complex Environment Simulation](https://youtu.be/nPvPdRppIpY)
 
 See the Sample <<>> for a nicely dressed apartement as starting point.
 
@@ -60,6 +48,19 @@ See the Sample <<>> for a nicely dressed apartement as starting point.
 #### Works great with
 - Device Simulator (but works without)
 - Input System: both (but works with old/new/both)
+
+#### Technical Stuff
+
+ARSimulation is a XR Plugin that works with Unity's XR SDK infrastructure and thus plugs right into ARFoundation and other systems in the VR/AR realm inside Unity. 
+
+![XR Architecture - ARSimulation](img/XRArchitecture-ARSimulation.svg)
+*Currently supported features are marked orange.*
+
+This architecture has some advantages:
+- ARSimulation will not clutter your project
+- it does not show up at all in your compiled app (otherwise it's a bug)
+- easier to maintain with future ARFoundation changes
+- requires zero changes 🤞 for working with other plugins that use ARFoundation
 
 ### Known Issues
 - camera background is supported (with custom 3D scenes), but no occlusion support right now

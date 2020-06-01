@@ -9,7 +9,7 @@ ARSimulation is a custom XR backend built on top of the [XR plugin architecture]
 It basically allows you to fly around in the Editor and test out your AR app, without having to change any code or structure. Import the package and go.
 
 [![Zero Setup](img/simple-explanation.gif)](https://youtu.be/3b0rXkKGPF8)
-*This scene uses only ARFoundationSamples code.*
+*This scene only uses ARFoundation features.*
 
 Because it's just another XR Plugin, it works with your existing app, ARFoundation, XR Interaction Toolkit, and even MARS. Zero code changes or setup needed!
 

@@ -1,4 +1,4 @@
-## <span class="logo"><a href="https://needle.tools">!=</a></span>ar simulation
+## <span class="logo"><a href="../">!=</a></span>ar simulation
 > Build AR apps with confidence.  
 Iterate fast, right in Editor.  
 Non-invasive, drop-in solution.  
@@ -6,28 +6,39 @@ Non-invasive, drop-in solution.
 #### What is this?
 ARSimulation is a custom XR backend built on top of the [XR plugin architecture](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/).  
 
-It basically allows you to fly around in the Editor and test out your AR app, without having to change any code or structure. Import the package and go.  
+It basically allows you to fly around in the Editor and test out your AR app, without having to change any code or structure. Import the package and go.
 
-Because it's just another XR Plugin, it works with ARFoundation, XR Interaction Toolkit, and even MARS.
+[![Zero Setup](simple-explanation.gif)](https://youtu.be/lTjGxEe7bmk)
+
+Because it's just another XR Plugin, it works with ARFoundation, XR Interaction Toolkit, and even MARS. Zero code changes or setup needed!
 
 ![XR Architecture - ARSimulation](XRArchitecture-ARSimulation.svg)
 
 #### Quick Start
-- Add package to your project
+- Add the ARSimulation package to your project
 - Press Play
-- Use WASD + <span class="inline-image">![Right Mouse Button](right-click.svg)</span> to move around,  
-<span class="inline-image">![Left Mouse Button](left-click.svg)</span> to click/touch
+- Use WASD + press RMB <span class="inline-image">![Right Mouse Button](right-click.svg)</span> to move around,  
+LMB <span class="inline-image">![Left Mouse Button](left-click.svg)</span> to click/touch/interact with your app
 - Done.
+
 
 **Need more tracked planes?**
 - drop SimulatedPlane prefab into the scene in Edit or Play Mode
-- move and adjust as necessary
+- move and adjust as necessary  
+
+[Custom Planes](https://youtu.be/I5LUYohV8oI)  
+[Runtime Adjustments](https://youtu.be/eS9v0dSpYQk)
+
+The same works for Point Clouds!
+(Tracked 3D Objects Coming Soon™)
 
 **Have a more complicated setup to test?**
 - add your geometry into a separate scene
 - add the scene to XY
 - press Play
 - Done.
+
+[Complex Environment Simulation](https://youtu.be/nPvPdRppIpY)
 
 See the Sample <<>> for a nicely dressed apartement as starting point.
 

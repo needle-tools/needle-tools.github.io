@@ -3,18 +3,29 @@
 Iterate fast, right in Editor.  
 Non-invasive, drop-in solution.  
 
-#### What is this?
+### What is this?
 ARSimulation is a custom XR backend built on top of the [XR plugin architecture](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/).  
 
 It basically allows you to fly around in the Editor and test out your AR app, without having to change any code or structure. Import the package and go.
 
-[![Zero Setup](simple-explanation.gif)](https://youtu.be/lTjGxEe7bmk)
+[![Zero Setup](simple-explanation.gif)](https://youtu.be/3b0rXkKGPF8)
+*This scene uses only ARFoundationSamples code. Currently supported features are marked orange.*
 
-Because it's just another XR Plugin, it works with ARFoundation, XR Interaction Toolkit, and even MARS. Zero code changes or setup needed!
+Because it's just another XR Plugin, it works with your existing app, ARFoundation, XR Interaction Toolkit, and even MARS. Zero code changes or setup needed!
+
+#### Technical Stuff
+
+ARSimulation is a XR Plugin that works with Unity's XR SDK infrastructure and thus plugs right into ARFoundation and other systems in the VR/AR realm inside Unity. 
 
 ![XR Architecture - ARSimulation](XRArchitecture-ARSimulation.svg)
 
-#### Quick Start
+This architecture has some advantages:
+- ARSimulation will not clutter your project
+- it does not show up at all in your compiled app (otherwise it's a bug)
+- easier to maintain with future ARFoundation changes
+- requires zero changes 🤞 for working with other plugins that use ARFoundation
+
+### Quick Start
 - Add the ARSimulation package to your project
 - Press Play
 - Use WASD + press RMB <span class="inline-image">![Right Mouse Button](right-click.svg)</span> to move around,  
@@ -22,7 +33,7 @@ LMB <span class="inline-image">![Left Mouse Button](left-click.svg)</span> to cl
 - Done.
 
 
-**Need more tracked planes?**
+#### Need more tracked planes?
 - drop SimulatedPlane prefab into the scene in Edit or Play Mode
 - move and adjust as necessary  
 
@@ -32,23 +43,36 @@ LMB <span class="inline-image">![Left Mouse Button](left-click.svg)</span> to cl
 The same works for Point Clouds!
 (Tracked 3D Objects Coming Soon™)
 
-**Have a more complicated setup to test?**
-- add your geometry into a separate scene
-- add the scene to XY
+#### Want to test against a more complicate scenery?
+- add your geometry, ideally as Prefab
+- add a SimulatedReality component to it
 - press Play
-- Done.
+- done.
+- (background camera image injection is experimental, but regular geometry "just works")
 
 [Complex Environment Simulation](https://youtu.be/nPvPdRppIpY)
 
 See the Sample <<>> for a nicely dressed apartement as starting point.
 
-##### Recommended packages:
+#### URP example
+[![URP Sample scene as Environment](urp-yt-preview.png)](https://youtu.be/RLLoR3mZ_fg)
+
+#### Works great with
 - Device Simulator (but works without)
 - Input System: both (but works with old/new/both)
 
-#### Supported scenarios
+### Known Issues
+- camera background is supported (with custom 3D scenes), but no occlusion support right now
+- environment cubemap support is platform-specific (Unity bug)
+- no support for simulating faces, people, or collaboration right now
+- partial support for meshing simulation (some support, but not quite identical to specific devices)
 
-#### But there is also MARS now!
+### But there is also MARS now!
+
+**Long story short:**
+- If you are starting a new project, are new to AR dev, are building a very complex AR app with multiple planes and dynamic content distribution, then MARS might be a good fit.  
+- If you have an existing project, are fine with ARFoundation`s feature set, are using other extensions on top of ARFoundation, are building a relatively simple AR app, or even when you're using MARS, ARSimulation might be helpful.
+
 > MARS: A Framework for Simplified, Flexible AR Authoring  
 
 Unity describes MARS (Mixed and Augmented Reality Studio) as "a framework for simplified, flexible AR authoring". We were active alpha testers, trying to use it for our own AR applications, and started developing our own solution in parallel. After a while, we stopped using MARS (besides of course testing and giving feedback to new releases).  
@@ -78,19 +102,18 @@ Fortunately, Unity provides the ability to build exactly that using the [XR plug
 - once you start using MARS, there isn't really a way back
 - MARS wraps around ARFoundation instead of extending it. This means it's not really feasible to use it for existing projects, unless you plan on converting a bunch of things to new components and 
 
-#### Known Issues
-- camera background is supported (with custom 3D scenes), but no occlusion support right now
-- environment cubemap support is platform-specific (Unity bug)
-- no support for simulating faces, people, or collaboration right now
-- partial support for meshing simulation (some support, but not quite identical to specific devices)
-
-#### Open Issues on Unity's end
+### Open Issues on Unity's end
 Unfortunately it seems nobody at Unity anticipated someone building custom XR providers in C# that are actually supposed to work in the Editor. It's advertised as a "way to build custom C++ plugins" only.  
 
 This has lead to funny situations where we reporting bugs around usage in Editor (e.g. of the ARFoundation Samples, XR Interaction Toolkit, and others), and Unity telling us that these "don't matter since you can't use them in Editor anyways". Well guys, we hope now you see why we were asking.  
-
-**Here's a rough overview of Known Issues:**  
+  
 - Device Simulator has no way to do multitouch simulation (usually a must for any touch simulator). This means that rotating in ARFoundation isn't working out of the box in Editor right now. We are currently using LeanTouch as a workaround, as that gives proper multitouch simulation support in both Game View and Device Simulator.
 - There's a number of warnings around subsystem usage in Editor. They seem to not matter much but are annoying (and incorrect).
 - There's an open issue with Cubemap creation in Editor (necessary for Environment Probe simulation): https://issuetracker.unity3d.com/product/unity/issues/guid/1215635
-- 
+
+### Contact
+
+<b>[needle — tools for unity](https://needle.tools)</b>
+[@NeedleTools](https://twitter.com/NeedleTools)
+[@marcel_wiessler](https://twitter.com/marcel_wiessler)
+[@hybridherbst](https://twitter.com/hybdridherbst)

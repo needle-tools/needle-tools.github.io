@@ -15,9 +15,27 @@
 </head>
 <body>
   <!-- <a href="https://api.github.com/orgs/needle-mirror/repos">API Example</a> -->
-  <p><input id="search" type="text" placeholder="search ..." /></p>
-  <div id="content"></div>
-  <div id="fixed-sidebar"><div id="changelog"></div></div>
+    <p>
+        <input style="position:fixed;" id="search" type="text" placeholder="search ..." />
+    </p>
+    
+    <div id="content" style="margin-top:50px;"></div>
+    <div class="fixed-sidebar full-height" style="top:100px;">
+        <div id="changelog-content">
+
+        </div>
+    </div>
+    <div class="fixed-sidebar">
+        <div id="package-info">
+            <p id="package-name" class="splendor-h3">Click a package to see details</p>
+            <a id="needle-changelog-link"   href="#" target = "_blank">Changelog</a>
+            <a id="needle-github-link"      href="#" target = "_blank" class="unknown">Needle GitHub</a>
+            <a id="unity-github-link"       href="#" target = "_blank">Unity GitHub</a>
+            <!-- <a id="unity-documentation-link" href="#">Unity Documentation</a> -->
+            <a id="unity-manual-link"       href="#" target = "_blank">Unity Manual</a>
+            <a id="unity-forum-link"        href="#" target = "_blank" class="unknown">Unity Forum</a>
+        </div>
+    </div>
   
   <script src="https://unpkg.com/lunr/lunr.js"></script>
 
@@ -76,9 +94,28 @@
 
     var prev = null;
 
-    function loadDocument(el) {
+    function setLink(element, href) {
+        // set href
+        let elem = document.getElementById(element);
+        elem.href = href;
+        
+        // try to check for existance
+        // will most likely fail because of CORS
+
+        // fetch(href, { mode:"no-cors" })
+        //     .then(response => {
+        //         // update class
+        //         console.log("status: " + response.ok + " for " + href + ", " + response.statusText + " ," + elem);
+        //         if(!response.ok)
+        //             elem.classList.add('not-found'); 
+        //         else
+        //             elem.classList.remove('not-found');
+        //     });
+    }
+
+    function loadDocument(packageName, el) {
         let href = el.getAttribute('href');
-        let content = document.getElementById('changelog');
+        let content = document.getElementById('changelog-content');
         content.innerHTML = marked('#### LOADING');
         if(prev != null)
             prev.classList.remove('selected');
@@ -91,8 +128,17 @@
                 if(el != prev)
                     return;
 
-                let content = document.getElementById('changelog');
-                content.innerHTML = "<p>" + el.innerHTML + "</p>" + marked(data);
+                content.innerHTML = marked(data);
+
+                // set up links per package
+                document.getElementById('package-name').innerText = packageName;
+                setLink('needle-changelog-link', "https://github.com/needle-mirror/" + packageName + "/blame/master/CHANGELOG.md");
+                setLink('needle-github-link', "https://github.com/needle-mirror/" + packageName);
+                setLink('unity-github-link', "https://github.com/Unity-Technologies/" + packageName);
+                // setLink('unity-documentation-link', "https://docs.unity3d.com/Packages/" + packageName + "@latest/manual/index.html");
+                setLink('unity-manual-link', "https://docs.unity3d.com/Manual/" + packageName);
+                setLink('unity-forum-link', "");
+
                 prev.classList.add('selected');
             });
     }
@@ -106,13 +152,13 @@
             
             if (el instanceof HTMLAnchorElement)
             {
-                loadDocument(el);
+                loadDocument(el.innerHTML, el);
             }
 
             event.preventDefault();
         }
 
-        content.addEventListener('mouseover', func);
+        // content.addEventListener('mouseover', func);
         content.addEventListener('click', func);
 
         let search = document.getElementById('search');

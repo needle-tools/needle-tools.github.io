@@ -55,6 +55,27 @@ Import the Sample " for a nicely dressed apartement as starting point.
 - Device Simulator (but works without)
 - Input System: both (but works with old/new/both)
 
+In fact, we tested a lot of configurations:
+
+| Unity Version | Input System |      |     | ARFoundation |             | Interaction Mode |                  |
+|---------------|--------------|------|-----|--------------|-------------|------------------|------------------|
+|               | Old          | Both | New | 3.1          | 4.0 | Game View        | Device Simulator<sup><a href="#table-sup-1">1</a></sup> |
+| 2019.3        | ✔️           | ✔️   | ✔️  | ✔️           | ✔️          | ✔️               | ✔️               |
+| 2020.1b       | ✔️           | ✔️   | ✔️  | ✔️           | ✔️          | ✔️               | ✔️               |
+| 2020.2a       | ✔️           | ✔️   | ✔️  | ✔️           | ✔️          | ✔️               | ✔️               |
+
+| Unity Version | Render Pipeline |           |                 | Platform |                   |               |
+|---------------|-----------------|-----------|-----------------|----------|-------------------|---------------|
+|               | Built-in        | URP       | HDRP<sup><a href="#table-sup-2">2</a></sup> | Editor   | iOS/Android Build<sup><a href="#table-sup-3">3</a></sup> | Desktop Build<sup><a href="#table-sup-4">4</a></sup>                |
+| 2019.3        | ✔️              | ✔️        | not tested      | ✔️      |  ❌                                         | not tested / future work     |
+| 2020.1b       | ✔️              | ✔️        | not tested      | ✔️      |  ❌                                         | not tested / future work     |
+| 2020.2a       | ✔️              | ✔️        | not tested      | ✔️      |  ❌                                         |                              |
+
+<sup id="table-sup-1">1</sup> Recommended. Feels very nice to use, and gives correct sizes for UI etc.  
+<sup id="table-sup-2">2</sup> HDRP is not supported by Unity on iOS/Android currently.  
+<sup id="table-sup-3">3</sup> "Support" here means: ARSimulation does not affect your builds, it is purely for Editor simulation.  
+<sup id="table-sup-4">4</sup> We haven't done as extensive testing as with the others yet. This is very useful for multiplayer scenarios.
+
 #### Technical Stuff
 
 ARSimulation is a XR Plugin that works with Unity's XR SDK infrastructure and thus plugs right into ARFoundation and other systems in the VR/AR realm inside Unity. 

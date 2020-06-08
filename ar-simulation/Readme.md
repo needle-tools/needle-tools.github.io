@@ -15,11 +15,11 @@ Because it's just another XR Plugin, it works with your existing app, ARFoundati
 
 ### Quick Start
 - Add the ARSimulation package to your project
+- Open any scene that is set up for ARFoundation, or set up a new one with 
 - Press Play
-- Use WASD + press RMB <span class="inline-image">![Right Mouse Button](img/right-click.svg)</span> to move around,  
+- Press RMB <span class="inline-image">![Right Mouse Button](img/right-click.svg)</span> + Use WASD to move around,  
 LMB <span class="inline-image">![Left Mouse Button](img/left-click.svg)</span> to click/touch/interact with your app
 - Done.
-
 
 #### Need more tracked planes?
 - drop SimulatedPlane prefab into the scene in Edit or Play Mode
@@ -30,6 +30,12 @@ LMB <span class="inline-image">![Left Mouse Button](img/left-click.svg)</span> t
 
 The same works for Point Clouds.  
 (Tracked 3D Objects Coming Soon™)
+
+#### Working with Image Tracking?
+- just press play, if your scene uses image tracking a Simulated Tracked Image is generated for you.
+- if you're using more than one tracked image, generate them with Empty GameObject + SimulatedARTrackedImage of your choice
+  (needs to be in a ReferenceImageLibrary of course)
+
 
 #### Want to test against a more complicated scenery?
 - add your geometry, ideally as Prefab
@@ -64,15 +70,22 @@ This architecture has some advantages:
 
 ### Known Issues
 - camera background is supported (with custom 3D scenes), but no occlusion support right now
-- environment cubemap support is platform-specific (Unity bug)
-- no support for simulating faces, people, or collaboration right now
-- partial support for meshing simulation (some support, but not quite identical to specific devices)
+- environment cubemap support is platform-specific  
+  (Unity bug, [Issue Tracker Link](https://issuetracker.unity3d.com/product/unity/issues/guid/1215635))
+- no support for simulating faces, people, or collaboration right now  
+  (let us know if you feel this is important to you!)
+- partial support for meshing simulation  
+  (some support, but not identical to specific devices)
+- touch input is single-touch for now, waiting for Unity to support it better  
+  (Device Simulator only supports single touch, since Input.SimulateTouch only supports one)
+- if your scene feels to dark / does not use environment lighting, make sure "Auto Generate" is on in Lighting Window or bake light data.  
+  (spherical harmonics simulation will only work if the shaders are aware that they should use it)
 
 ### But there is also MARS now!
 
 **Long story short:**
 - If you are starting a new project, are new to AR dev, are building a very complex AR app with multiple planes and dynamic content distribution, then MARS might be a good fit.  
-- If you have an existing project, are fine with ARFoundation`s feature set, are using other extensions on top of ARFoundation, are building a relatively simple AR app, or even when you're using MARS, ARSimulation might be helpful.
+- If you have an existing project, are fine with ARFoundation`s feature set, are using other extensions on top of ARFoundation, are building a relatively simple AR app, don't want to shell out 600$/year/seat, ARSimulation might be helpful.
 
 > MARS: A Framework for Simplified, Flexible AR Authoring  
 
@@ -110,9 +123,13 @@ This has lead to funny situations where we reporting bugs around usage in Editor
   
 - Device Simulator has no way to do multitouch simulation (usually a must for any touch simulator). This means that rotating in ARFoundation isn't working out of the box in Editor right now. We are currently using LeanTouch as a workaround, as that gives proper multitouch simulation support in both Game View and Device Simulator.
 - There's a number of warnings around subsystem usage in Editor. They seem to not matter much but are annoying (and incorrect).
-- There's an open issue with Cubemap creation in Editor (necessary for Environment Probe simulation): https://issuetracker.unity3d.com/product/unity/issues/guid/1215635
+- There's an open issue with Cubemap creation in Editor (necessary for Environment Probe simulation). [Issue Tracker](https://issuetracker.unity3d.com/product/unity/issues/guid/1215635)
+- Device Simulator disables Mouse input completely - we're working around that here but be aware when you try to create Android / iOS apps that also support mouse. [Forum Thread](https://forum.unity.com/threads/new-device-simulator-preview.751067/page-4#post-5952482)
+- in 2020.1 and 2020.2, even when you enable "New Input System", the Input System package is not installed in package manager. You have to install it manually. [Forum Thread](https://forum.unity.com/threads/new-input-system-not-installed-in-2020-1-after-enabling-it.908027/)
 
 ### Contact
+
+[Forum Thread — ARSimulation]()
 
 <b>[needle — tools for unity](https://needle.tools)</b>
 [@NeedleTools](https://twitter.com/NeedleTools)

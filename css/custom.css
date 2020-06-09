@@ -87,6 +87,9 @@ li img {
 a.not-found {
     color:red;
     opacity:0.3;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
 
 a.unknown {

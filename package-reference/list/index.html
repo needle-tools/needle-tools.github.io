@@ -20,7 +20,7 @@
     </p>
     
     <div id="content" style="margin-top:50px;"></div>
-    <div class="fixed-sidebar full-height" style="top:100px;">
+    <div class="fixed-sidebar full-height" style="top:130px;">
         <div id="changelog-content">
 
         </div>
@@ -28,12 +28,19 @@
     <div class="fixed-sidebar">
         <div id="package-info">
             <p id="package-name" class="splendor-h3">Click a package to see details</p>
-            <a id="needle-changelog-link"   href="#" target = "_blank">Changelog</a>
-            <a id="needle-github-link"      href="#" target = "_blank">Needle GitHub</a>
-            <a id="unity-github-link"       href="#" target = "_blank" class="unknown">Unity GitHub</a>
-            <!-- <a id="unity-documentation-link" href="#">Unity Documentation</a> -->
-            <a id="unity-manual-link"       href="#" target = "_blank">Unity Manual</a>
-            <a id="unity-forum-link"        href="#" target = "_blank" class="unknown">Unity Forum</a>
+            <div>
+                <span>Needle</span>
+                <a id="needle-changelog-link"   href="#" target = "_blank">Changelog</a>
+                <a id="needle-github-link"      href="#" target = "_blank">GitHub</a>
+            </div>
+            <div>
+                <span>Unity</span>
+                <a id="unity-github-link"       href="#" target = "_blank">Code/Samples</a>
+                <!-- <a id="unity-documentation-link" href="#">Unity Documentation</a> -->
+                <a id="unity-manual-link"       href="#" target = "_blank">Manual</a>
+                <a id="unity-forum-link"        href="#" target = "_blank">Forum</a>
+                <a id="unity-blog-link"         href="#" target = "_blank">Blog</a>
+            </div>
         </div>
     </div>
   
@@ -46,7 +53,16 @@
     var baseUrl = 'https://github.com/needle-mirror/';
     var rawUrl = 'https://raw.githubusercontent.com/needle-mirror/';
     var elementMap = {};
-    var idx = null
+    var idx = null;
+    var additionalData = null;
+
+    function fetchAdditionalData(href) {
+        fetch(href)
+            .then(response => response.json())
+            .then((data) => {
+                additionalData = data;
+            });
+    }
 
     function fetchPage(href) {
         fetch(href)
@@ -97,8 +113,15 @@
     function setLink(element, href) {
         // set href
         let elem = document.getElementById(element);
-        elem.href = href;
         
+        if(!href) {
+            elem.href = "#";
+            elem.classList.add('not-found');
+        }    
+        else {
+            elem.href = href;
+            elem.classList.remove("not-found");
+        }
         // try to check for existance
         // will most likely fail because of CORS
 
@@ -129,15 +152,23 @@
                     return;
 
                 content.innerHTML = marked(data);
+                
+                // check for additional data
+                var additional = additionalData[packageName];
+                if(additional.packageNameRemap != null)
+                    packageName = additional.packageNameRemap;
+
+                // console.log(additional);
 
                 // set up links per package
                 document.getElementById('package-name').innerText = packageName;
                 setLink('needle-changelog-link', "https://github.com/needle-mirror/" + packageName + "/blame/master/CHANGELOG.md");
                 setLink('needle-github-link', "https://github.com/needle-mirror/" + packageName);
-                setLink('unity-github-link', "https://github.com/Unity-Technologies/" + packageName);
+                setLink('unity-github-link', additional.code);
                 // setLink('unity-documentation-link', "https://docs.unity3d.com/Packages/" + packageName + "@latest/manual/index.html");
                 setLink('unity-manual-link', "https://docs.unity3d.com/Manual/" + packageName);
-                setLink('unity-forum-link', "");
+                setLink('unity-forum-link', additional.forum);
+                setLink('unity-blog-link', additional.blog);
 
                 prev.classList.add('selected');
             });
@@ -174,6 +205,14 @@
                     elementMap[x.ref].classList.remove('hidden');
                 });
 
+                // load first result automatically
+                if(searchResults.length > 0) {
+                    loadDocument(
+                        searchResults[0].ref, 
+                        elementMap[searchResults[0].ref].getElementsByTagName("a")[0]
+                    );
+                }
+
                 // console.log(searchResults);
                 content.classList.add('searching');
             }
@@ -186,6 +225,7 @@
         });
     }
 
+    fetchAdditionalData('map.json');
     fetchPage('https://needle.gaisterhand.de/fwd/pacman/');
     setup();
   </script>

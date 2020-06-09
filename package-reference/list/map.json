@@ -1,0 +1,549 @@
+{
+    "com.havok.physics": {
+        "forum": "https://forum.unity.com/forums/dots-physics.422/?_ga=2.20191354.333515592.1591436326-2009833684.1590794259",
+        "blog": "https://blogs.unity3d.com/2019/11/06/havok-physics-in-unity/"
+    },
+    "com.ptc.vuforia.engine": {
+        "forum": "https://forum.unity.com/forums/vuforia.138/",
+        "blog": "https://blogs.unity3d.com/2020/04/21/augment-your-spaces-with-vuforia-engine/"
+    },
+    "com.unity.2d.animation": {
+        "forum": "https://forum.unity.com/threads/2d-animation-is-out-of-preview-for-2019-3.818724/",
+        "blog": ""
+    },
+    "com.unity.2d.entities": {
+        "forum": "https://forum.unity.com/threads/first-batch-of-2d-features-for-project-tiny-0-22-is-now-available.830652/",
+        "blog": ""
+    },
+    "com.unity.2d.ik": {
+        "forum": "https://forum.unity.com/threads/2d-animation-is-out-of-preview-for-2019-3.818724/",
+        "blog": ""
+    },
+    "com.unity.2d.pixel-perfect": {
+        "forum": "",
+        "blog": "https://blogs.unity3d.com/2019/03/13/2d-pixel-perfect-how-to-set-up-your-unity-project-for-retro-8-bits-games/"
+    },
+    "com.unity.2d.psdimporter": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.2d.spriteshape": {
+        "forum": "https://forum.unity.com/threads/2d-sprite-shape-is-out-of-preview-for-2019-3.818799/",
+        "blog": "https://blogs.unity3d.com/2018/09/20/intro-to-2d-world-building-with-sprite-shape/"
+    },
+    "com.unity.adaptiveperformance": {
+        "forum": "https://forum.unity.com/threads/adaptive-performance-package.652306/",
+        "blog": "https://blogs.unity3d.com/2019/04/01/higher-fidelity-and-smoother-frame-rates-with-adaptive-performance/"
+    },
+    "com.unity.adaptiveperformance.samsung.android": {
+        "forum": "https://forum.unity.com/threads/adaptive-performance-package.652306/",
+        "blog": "https://blogs.unity3d.com/2019/04/01/higher-fidelity-and-smoother-frame-rates-with-adaptive-performance/"
+    },
+    "com.unity.addressables": {
+        "forum": "https://forum.unity.com/threads/addressables-are-here.536304/",
+        "blog": "https://blogs.unity3d.com/2019/07/15/addressable-asset-system/",
+        "docs": "https://docs.google.com/document/d/1hPLNLdrF0qAvjEJTpKf-cuO_d4FCV0H2cqBeP1Zo6mA/edit"
+    },
+    "com.unity.ads": {
+        "forum": "https://forum.unity.com/forums/unity-ads.67/",
+        "blog": "https://blogs.unity3d.com/2015/04/09/integrating-unity-ads/"
+    },
+    "com.unity.ads.mediation": {
+        "forum": "",
+        "blog": "https://unityads.unity3d.com/help/resources/mediation"
+    },
+    "com.unity.ai.planner": {
+        "forum": "https://forum.unity.com/threads/ai-planner-v0-2-preview-released.789809/",
+        "blog": ""
+    },
+    "com.unity.analytics": {
+        "forum": "https://forum.unity.com/forums/unity-analytics.81/",
+        "blog": "https://blogs.unity3d.com/tag/unity-analytics/"
+    },
+    "com.unity.animation.cs-jobs-samples": {
+        "forum": "https://forum.unity.com/threads/animation-c-jobs-in-2018-2a5.525012/",
+        "blog": "https://blogs.unity3d.com/2018/08/27/animation-c-jobs/",
+        "code": "https://github.com/Unity-Technologies/animation-jobs-samples"
+    },
+    "com.unity.animation.rigging": {
+        "forum": "https://forum.unity.com/forums/animation-previews.141/",
+        "blog": "https://blogs.unity3d.com/2019/05/14/introducing-the-animation-rigging-preview-package-for-unity-2019-1/"
+    },
+    "com.unity.aovrecorder": {
+        "forum": "https://forum.unity.com/threads/unity-aov-recorder-update.717089/",
+        "blog": ""
+    },
+    "com.unity.assetbundlebrowser": {
+        "forum": "https://forum.unity.com/threads/asset-bundle-browser-initial-release.465766/",
+        "blog": "https://blogs.unity3d.com/2020/04/09/learn-to-save-memory-usage-by-improving-the-way-you-use-assetbundles/"
+    },
+    "com.unity.assetgraph": {
+        "forum": "",
+        "blog": "",
+        "code":"https://github.com/Unity-Technologies/AssetGraph"
+    },
+    "com.unity.barracuda": {
+        "forum": "https://forum.unity.com/forums/ai-navigation-previews.122/",
+        "blog": "",
+        "code": "https://github.com/Unity-Technologies/barracuda-release"
+    },
+    "com.unity.barracuda.burst": {
+        "forum": "",
+        "blog": "",
+        "code":"https://github.com/Unity-Technologies/barracuda-burst-release"
+    },
+    "com.unity.build-report-inspector": {
+        "forum": "",
+        "blog": "",
+        "code":"https://github.com/Unity-Technologies/BuildReportInspector"
+    },
+    "com.unity.burst": {
+        "forum": "https://forum.unity.com/threads/burst-for-standalone-players.539820/",
+        "blog": "https://blogs.unity3d.com/2020/05/27/optimize-your-projects-with-burst-compiler-1-3/"
+    },
+    "com.unity.cinemachine": {
+        "forum": "https://forum.unity.com/forums/cinemachine.136/",
+        "blog": "https://blogs.unity3d.com/2017/08/25/community-stories-cinemachine-and-timeline/"
+    },
+    "com.unity.cloud.userreporting": {
+        "forum": "https://forum.unity.com/forums/unity-cloud-diagnostics.83/",
+        "blog": "https://unitytech.github.io/clouddiagnostics/userreporting/UnityCloudDiagnosticsUserReports.html"
+    },
+    "com.unity.collab-proxy": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.collections": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.connect.share": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.device-simulator": {
+        "forum": "https://forum.unity.com/threads/new-device-simulator-preview.751067/",
+        "blog": "https://blogs.unity3d.com/2019/09/27/speed-up-mobile-iteration-with-the-new-device-simulator/"
+    },
+    "com.unity.dots.editor": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": "https://blogs.unity3d.com/2019/03/08/on-dots-entity-component-system/",
+        "code": "https://github.com/Unity-Technologies/EntityComponentSystemSamples"
+    },
+    "com.unity.editorcoroutines": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.entities": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": "https://blogs.unity3d.com/2019/03/08/on-dots-entity-component-system/"
+    },
+    "com.unity.facebook-platform": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.film-tv.toolbox": {
+        "forum": "https://forum.unity.com/forums/cinemachine.136/",
+        "blog": "https://unity.com/solutions/film-animation-cinematics",
+        "code": "https://github.com/Unity-Technologies/film-tv-toolbox"
+    },
+    "com.unity.formats.alembic": {
+        "forum": "https://forum.unity.com/threads/alembic-for-unity.521649/",
+        "blog": "https://blogs.unity3d.com/2017/12/04/adam-the-evolution-of-alembic-support-in-unity/",
+        "code":"https://github.com/Unity-Technologies/AlembicForUnity"
+    },
+    "com.unity.formats.fbx": {
+        "forum": "https://forum.unity.com/threads/new-fbx-exporter-in-2017-2.499889/",
+        "blog": "",
+        "code":"https://github.com/Unity-Technologies/com.unity.formats.fbx"
+    },
+    "com.unity.formats.usd": {
+        "forum": "https://forum.unity.com/threads/usd-for-unity-updates.646645/",
+        "blog": "https://blogs.unity3d.com/2019/03/28/pixars-universal-scene-description-for-unity-out-in-preview/",
+        "code":"https://github.com/Unity-Technologies/usd-unity-sdk"
+    },
+    "com.unity.game.foundation": {
+        "forum": "https://forum.unity.com/forums/game-foundation.416/",
+        "blog": "https://unity.com/de/solutions/mobile-business/game-foundation"
+    },
+    "com.unity.google.resonance.audio": {
+        "forum": "https://forum.unity.com/threads/resonance-audio-sdk-for-unity-deliver-high-fidelity-spatial-audio-at-scale.503347/?_ga=2.46207333.333515592.1591436326-2009833684.1590794259",
+        "blog": "https://blogs.unity3d.com/2017/11/06/googles-resonance-audio-high-fidelity-sound-across-mobile-desktop/",
+        "code": "https://resonance-audio.github.io/resonance-audio/develop/unity/getting-started"
+    },
+    "com.unity.ide.rider": {
+        "forum": "",
+        "blog": "https://blogs.unity3d.com/2019/08/13/faster-c-scripting-with-jetbrains-rider/"
+    },
+    "com.unity.ide.vscode": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.immediate-window": {
+        "forum": "https://forum.unity.com/threads/immediate-window.597601/",
+        "blog": "",
+        "code": "https://github.com/Unity-Technologies/com.unity.immediate-window"
+    },
+    "com.unity.incrementalcompiler": {
+        "forum": "https://forum.unity.com/threads/unity-incremental-c-compiler-deprecated.523993/",
+        "blog": ""
+    },
+    "com.unity.inputsystem": {
+        "forum": "https://forum.unity.com/forums/new-input-system.103/",
+        "blog": "https://blogs.unity3d.com/2019/10/14/introducing-the-new-input-system/",
+        "code": "https://github.com/Unity-Technologies/InputSystem/pull/337/files"
+    },
+    "com.unity.jobs": {
+        "forum": "",
+        "blog": "https://blogs.unity3d.com/2018/10/22/what-is-a-job-system/"
+    },
+    "com.unity.kinematica": {
+        "forum": "https://forum.unity.com/threads/unite-now-kinematica-democratizing-motion-matching-for-character-animation.878761/",
+        "blog": "https://blogs.unity3d.com/2018/06/20/announcing-kinematica-animation-meets-machine-learning/",
+        "code": "https://github.com/Unity-Technologies/Kinematica_Demo"
+    },
+    "com.unity.mathematics": {
+        "forum": "https://forum.unity.com/threads/unity-mathematics-available-on-github.526100/",
+        "blog": "",
+        "code": "https://github.com/Unity-Technologies/Unity.Mathematics"
+    },
+    "com.unity.memoryprofiler": {
+        "forum": "https://forum.unity.com/forums/profiler-previews.199/",
+        "blog": ""
+    },
+    "com.unity.meshsync": {
+        "forum": "https://forum.unity.com/forums/external-tools.22/",
+        "blog": "",
+        "code": "https://github.com/unity3d-jp/MeshSync"
+    },
+    "com.unity.ml-agents": {
+        "forum": "https://forum.unity.com/threads/ml-agents-roadmap-update-may-11-2020-discussion-thread.888016/",
+        "blog": "https://blogs.unity3d.com/category/machine-learning/",
+        "code":"https://github.com/Unity-Technologies/ml-agents"
+    },
+    "com.unity.mobile.adaptiveperformance": {
+        "forum": "https://forum.unity.com/threads/adaptive-performance-package.652306/",
+        "blog": "https://blogs.unity3d.com/2019/04/01/higher-fidelity-and-smoother-frame-rates-with-adaptive-performance/"
+    },
+    "com.unity.mobile.android-logcat": {
+        "forum": "https://forum.unity.com/threads/android-logcat-package-feedback.595003/",
+        "blog": ""
+    },
+    "com.unity.mobile.buildreport": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.mobile.notifications": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.multiplayer-hlapi": {
+        "forum": "https://forum.unity.com/threads/unet-deprecation-thread.543501/",
+        "blog": "https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/"
+    },
+    "com.unity.netcode": {
+        "forum": "https://forum.unity.com/forums/connected-games.26/",
+        "blog": "https://blogs.unity3d.com/2019/06/13/navigating-unitys-multiplayer-netcode-transition/",
+        "code": "https://github.com/Unity-Technologies/multiplayer"
+    },
+    "com.unity.oculus": {
+        "forum": "https://forum.unity.com/forums/vr.160/",
+        "blog": "",
+        "packageNameRemap" : "com.unity.xr.oculus"
+    },
+    "com.unity.package-manager-doctools": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.package-manager-ui": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.package-validation-suite": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.performance.profile-analyzer": {
+        "forum": "https://forum.unity.com/forums/profiler-previews.199/",
+        "blog": "https://blogs.unity3d.com/2019/05/13/introducing-the-profile-analyzer/"
+    },
+    "com.unity.physics": {
+        "forum": "https://forum.unity.com/forums/dots-physics.422/",
+        "blog": "https://blogs.unity3d.com/2019/03/19/announcing-unity-and-havok-physics-for-dots/"
+    },
+    "com.unity.platforms": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.platforms.android": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.platforms.linux": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.platforms.macos": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.platforms.web": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.platforms.windows": {
+        "forum": "https://forum.unity.com/forums/data-oriented-technology-stack.147/",
+        "blog": ""
+    },
+    "com.unity.playablegraph-visualizer": {
+        "forum": "https://forum.unity.com/threads/playablegraph-visualizer-package-in-preview.602035/",
+        "blog": "https://blogs.unity3d.com/2017/08/02/unity-2017-1-feature-spotlight-playable-api/",
+        "code": "https://github.com/Unity-Technologies/graph-visualizer"
+    },
+    "com.unity.polybrush": {
+        "forum": "https://forum.unity.com/forums/world-building.146/",
+        "blog": "https://unity3d.com/de/unity/features/worldbuilding/polybrush"
+    },
+    "com.unity.postprocessing": {
+        "forum": "https://forum.unity.com/threads/new-post-processing-stack-pre-release.435581/",
+        "blog": "https://blogs.unity3d.com/pt/2018/06/11/postfx-v2-amazing-visuals-upgraded/"
+    },
+    "com.unity.probuilder": {
+        "forum": "https://forum.unity.com/threads/released-probuilder-2-0-seamless-intuitive-level-design-in-unity-finally-live.169245/page-24",
+        "blog": "https://blogs.unity3d.com/2018/02/15/probuilder-joins-unity-offering-integrated-in-editor-advanced-level-design/"
+    },
+    "com.unity.progrids": {
+        "forum": "https://forum.unity.com/forums/world-building.146/",
+        "blog": "https://blogs.unity3d.com/2018/02/15/probuilder-joins-unity-offering-integrated-in-editor-advanced-level-design/"
+    },
+    "com.unity.purchasing": {
+        "forum": "https://forum.unity.com/forums/unity-iap.112/",
+        "blog": "https://unity3d.com/de/unity/features/iap"
+    },
+    "com.unity.purchasing.udp": {
+        "forum": "https://forum.unity.com/forums/unity-iap.112/",
+        "blog": "https://unity3d.com/de/unity/features/iap"
+    },
+    "com.unity.quicksearch": {
+        "forum": "https://forum.unity.com/threads/quick-search-preview.635863/",
+        "blog": ""
+    },
+    "com.unity.recorder": {
+        "forum": "https://forum.unity.com/threads/unity-recorder-update.509458/",
+        "blog": ""
+    },
+    "com.unity.reflect": {
+        "forum": "",
+        "blog": "https://blogs.unity3d.com/2019/11/19/unity-reflect-arrives-in-december/"
+    },
+    "com.unity.reflect.runtime": {
+        "forum": "",
+        "blog": "https://blogs.unity3d.com/2019/11/19/unity-reflect-arrives-in-december/"
+    },
+    "com.unity.remote-config": {
+        "forum": "https://forum.unity.com/forums/unity-remote-config.371/",
+        "blog": "https://blogs.unity3d.com/2017/06/02/introducing-remote-settings-update-your-game-in-an-instant/"
+    },
+    "com.unity.render-pipelines": {
+        "forum": "",
+        "blog": "",
+        "packageNameRemap": "com.unity.render-pipelines.core"
+    },
+    "com.unity.render-pipelines.high-definition": {
+        "forum": "https://forum.unity.com/threads/finding-your-way-in-hdrp-7-2-0-getting-started-settings-new-feature.833056/",
+        "blog": "https://blogs.unity3d.com/2020/02/24/hdrp-out-of-preview-in-2019-3/"
+    },
+    "com.unity.render-pipelines.lightweight": {
+        "forum": "https://forum.unity.com/forums/universal-render-pipeline.383/",
+        "blog": "https://blogs.unity3d.com/2020/02/10/achieve-beautiful-scalable-and-performant-graphics-with-the-universal-render-pipeline/",
+        "code": "https://github.com/Unity-Technologies/Graphics"
+    },
+    "com.unity.render-pipelines.universal": {
+        "forum": "https://forum.unity.com/forums/universal-render-pipeline.383/",
+        "blog": "https://blogs.unity3d.com/2020/02/10/achieve-beautiful-scalable-and-performant-graphics-with-the-universal-render-pipeline/",
+        "code":"https://github.com/Unity-Technologies/Graphics"
+    },
+    "com.unity.rendering.hybrid": {
+        "forum": "https://forum.unity.com/threads/hybrid-renderer-v2-0-4-0.847546/",
+        "blog": "",
+        "code":"https://github.com/Unity-Technologies/Graphics"
+    },
+    "com.unity.renderstreaming": {
+        "forum": "https://forum.unity.com/threads/unity-render-streaming-introduction-faq.742481/",
+        "blog": "https://blogs.unity3d.com/2019/09/17/stream-high-quality-real-time-graphics-through-your-browser-with-our-new-webrtc-framework/",
+        "code": "https://github.com/Unity-Technologies/UnityRenderStreaming"
+    },
+    "com.unity.resourcemanager": {
+        "forum": "https://forum.unity.com/threads/addressables-are-here.536304/",
+        "blog": ""
+    },
+    "com.unity.scene-template": {
+        "forum": "https://forum.unity.com/threads/scene-templates-preview-now-available-for-feedback.778265/",
+        "blog": ""
+    },
+    "com.unity.scriptablebuildpipeline": {
+        "forum": "https://forum.unity.com/threads/addressables-are-here.536304/",
+        "blog": ""
+    },
+    "com.unity.shadergraph": {
+        "forum": "https://forum.unity.com/forums/shader-graph.346/",
+        "blog": "https://blogs.unity3d.com/2018/02/27/introduction-to-shader-graph-build-your-shaders-with-a-visual-editor/",
+        "code": "https://github.com/Unity-Technologies/Graphics"
+    },
+    "com.unity.simulation.client": {
+        "forum": "https://forum.unity.com/forums/unity-game-simulation.472/",
+        "blog": "https://blogs.unity3d.com/2020/03/24/optimize-your-game-balance-with-unity-game-simulation/",
+        "code": "https://unity-technologies.github.io/gamesimulation/"
+    },
+    "com.unity.simulation.core": {
+        "forum": "https://forum.unity.com/forums/unity-game-simulation.472/",
+        "blog": "https://blogs.unity3d.com/2020/03/24/optimize-your-game-balance-with-unity-game-simulation/",
+        "code": "https://unity-technologies.github.io/gamesimulation/"
+    },
+    "com.unity.spriteshape": {
+        "forum": "https://forum.unity.com/threads/2d-sprite-shape-is-out-of-preview-for-2019-3.818799/",
+        "blog": "https://blogs.unity3d.com/2018/09/20/intro-to-2d-world-building-with-sprite-shape/",
+        "packageNameRemap": "com.unity.2d.spriteshape"
+    },
+    "com.unity.standardevents": {
+        "forum": "https://forum.unity.com/forums/unity-analytics.81/",
+        "blog": "https://blogs.unity3d.com/2017/05/12/introducing-standard-events/"
+    },
+    "com.unity.streaming-image-sequence": {
+        "forum": "https://forum.unity.com/threads/unity-render-streaming-introduction-faq.742481/",
+        "blog": "https://blogs.unity3d.com/2019/09/17/stream-high-quality-real-time-graphics-through-your-browser-with-our-new-webrtc-framework/",
+        "code": "https://github.com/Unity-Technologies/UnityRenderStreaming"
+    },
+    "com.unity.terrain-tools": {
+        "forum": "https://forum.unity.com/forums/world-building.146/",
+        "blog": "https://blogs.unity3d.com/2019/05/28/speed-up-your-work-with-the-new-terrain-tools-package/",
+        "code": "https://github.com/Unity-Technologies/TerrainToolSamples"
+    },
+    "com.unity.test-framework": {
+        "forum": "https://forum.unity.com/threads/unity-test-framework-documentation.711143/",
+        "blog": "https://blogs.unity3d.com/2018/11/02/testing-test-driven-development-with-the-unity-test-runner/"
+    },
+    "com.unity.test-framework.performance": {
+        "forum": "https://forum.unity.com/forums/testing-automation.211/",
+        "blog": "https://blogs.unity3d.com/2018/11/02/testing-test-driven-development-with-the-unity-test-runner/"
+    },
+    "com.unity.testtools.codecoverage": {
+        "forum": "https://forum.unity.com/threads/code-coverage-package-preview.777542/",
+        "blog": "https://blogs.unity3d.com/2020/05/22/code-coverage-spot-gaps-in-your-tests/"
+    },
+    "com.unity.textmeshpro": {
+        "forum": "https://forum.unity.com/forums/ugui-textmesh-pro.60/",
+        "blog": "https://blogs.unity3d.com/2018/10/16/making-the-most-of-textmesh-pro-in-unity-2018/"
+    },
+    "com.unity.timeline": {
+        "forum": "https://forum.unity.com/forums/timeline.127/",
+        "blog": "https://blogs.unity3d.com/2018/09/05/extending-timeline-a-practical-guide/",
+        "code": "https://github.com/UnityTechnologies/ATerribleKingdom"
+    },
+    "com.unity.tiny": {
+        "forum": "https://forum.unity.com/forums/project-tiny.151/",
+        "blog": "https://blogs.unity3d.com/2018/12/05/project-tiny-preview-package-is-here/",
+        "code": "https://github.com/Unity-Technologies/ProjectTinySamples",
+        "docs": "https://docs.google.com/document/d/1A8hen2hLFY5FLkC5gd3JP2Z-IpHfnAX-CpYLK3aOdwA/edit"
+    },
+    "com.unity.tiny.all": {
+        "forum": "https://forum.unity.com/forums/project-tiny.151/",
+        "blog": "https://blogs.unity3d.com/2018/12/05/project-tiny-preview-package-is-here/",
+        "code": "https://github.com/Unity-Technologies/ProjectTinySamples",
+        "docs": "https://docs.google.com/document/d/1A8hen2hLFY5FLkC5gd3JP2Z-IpHfnAX-CpYLK3aOdwA/edit"
+    },
+    "com.unity.transport": {
+        "forum": "https://forum.unity.com/forums/connected-games.26/",
+        "blog": "https://blogs.unity3d.com/2019/06/13/navigating-unitys-multiplayer-netcode-transition/",
+        "code": "https://github.com/Unity-Technologies/multiplayer"
+    },
+    "com.unity.ui.builder": {
+        "forum": "https://forum.unity.com/forums/ui-toolkit.178/",
+        "blog": "https://blogs.unity3d.com/2019/04/23/whats-new-with-uielements-in-2019-1/"
+    },
+    "com.unity.upm.develop": {
+        "forum": "https://forum.unity.com/forums/package-manager.150/",
+        "blog": ""
+    },
+    "com.unity.vectorgraphics": {
+        "forum": "https://forum.unity.com/threads/vector-graphics-preview-package.529845/",
+        "blog": "",
+        "code": "https://github.com/Unity-Technologies/vector-graphics-samples"
+    },
+    "com.unity.visualeffectgraph": {
+        "forum": "https://forum.unity.com/forums/visual-effect-graph.428/",
+        "blog": "https://blogs.unity3d.com/2018/11/27/creating-explosive-visuals-with-the-visual-effect-graph/",
+        "code": "https://github.com/Unity-Technologies/Graphics"
+    },
+    "com.unity.webrtc": {
+        "forum": "https://forum.unity.com/threads/unity-render-streaming-introduction-faq.742481/",
+        "blog": "https://blogs.unity3d.com/2019/09/17/stream-high-quality-real-time-graphics-through-your-browser-with-our-new-webrtc-framework/",
+        "code": "https://github.com/Unity-Technologies/com.unity.webrtc"
+    },
+    "com.unity.xiaomi": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.arcore": {
+        "forum": "https://forum.unity.com/forums/arcore.137/",
+        "blog": "https://blogs.unity3d.com/2018/12/11/arcore-and-unity-a-look-at-2018-and-the-road-ahead/"
+    },
+    "com.unity.xr.arfoundation": {
+        "forum": "https://forum.unity.com/forums/handheld-ar.159/",
+        "blog": "https://blogs.unity3d.com/2018/12/18/unitys-handheld-ar-ecosystem-ar-foundation-arcore-and-arkit/",
+        "code": "https://github.com/Unity-Technologies/arfoundation-samples"
+    },
+    "com.unity.xr.arkit": {
+        "forum": "https://forum.unity.com/forums/arkit.139/",
+        "blog": "https://blogs.unity3d.com/2019/06/06/ar-foundation-support-for-arkit-3/"
+    },
+    "com.unity.xr.arkit-face-tracking": {
+        "forum": "https://forum.unity.com/forums/arkit.139/",
+        "blog": "https://blogs.unity3d.com/2019/06/06/ar-foundation-support-for-arkit-3/"
+    },
+    "com.unity.xr.googlevr.android": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.googlevr.ios": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.interaction.toolkit": {
+        "forum": "https://forum.unity.com/threads/xr-interaction-toolkit-preview-release.795684/",
+        "blog": "https://blogs.unity3d.com/2019/12/17/xr-interaction-toolkit-preview-package-is-here/",
+        "code": "https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples"
+    },
+    "com.unity.xr.legacyinputhelpers": {
+        "forum": "https://forum.unity.com/forums/ar-vr-xr-discussion.80/",
+        "blog": ""
+    },
+    "com.unity.xr.management": {
+        "forum": "https://forum.unity.com/threads/2019-3-release-xr-updates.821637/?_ga=2.13400181.333515592.1591436326-2009833684.1590794259",
+        "blog": "https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/"
+    },
+    "com.unity.xr.mock-hmd": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.oculus.android": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.oculus.standalone": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.openvr.standalone": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.windowsmr": {
+        "forum": "",
+        "blog": ""
+    },
+    "com.unity.xr.windowsmr.metro": {
+        "forum": "",
+        "blog": ""
+    }
+}

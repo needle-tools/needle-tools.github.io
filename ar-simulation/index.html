@@ -19,21 +19,14 @@
       .then((data) => {
           const renderer = {
             image(href, title, text) {
-              console.log("found image: " + href);
               let newHref = href.replace("../../wiki/", srcUrl);
-              return `<img src="${newHref}"">${text}</img>`;
+              return `<img src="${newHref}" alt="${text}"></img>`;
             }
           };
 
-          console.log("marked use linkRewrite");
           marked.use( { renderer } );
           
-          document.getElementById('content').innerHTML =
-              marked(
-                //DOMPurify.sanitize(
-                  data
-                  //)
-              );
+          document.getElementById('content').innerHTML = marked(data);
     });
   </script>
 </body>

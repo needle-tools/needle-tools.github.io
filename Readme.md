@@ -15,12 +15,10 @@ with history, changelogs, Twitter bot and RSS feed.
 Chrome Extension for Unity Fogbugz to  
 improve viewing and managing your bug reports.  
 
-### package master (Coming Soon™)
-Develop, publish and  
-maintain packages with ease.  
-
-*Coming soon*
-
+### package master
+Develop, publish and maintain packages with ease.  
+Avoid common mistakes and performance issues.  
+*Coming Soon™*
 
 ### contact
 
@@ -28,3 +26,4 @@ maintain packages with ease.
 [@NeedleTools](https://twitter.com/NeedleTools)
 [@marcel_wiessler](https://twitter.com/marcel_wiessler)
 [@hybridherbst](https://twitter.com/hybdridherbst)
+[Say hi!](mailto:hi@needle.tools?subject=Hi!)

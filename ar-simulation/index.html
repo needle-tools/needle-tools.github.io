@@ -13,15 +13,27 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <!-- <script src="https://unpkg.com/browse/dompurify/dist/purify.min.js"></script> -->
   <script>
-    fetch('Readme.md')
-        .then(response => response.text())
-        .then((data) => {
-            document.getElementById('content').innerHTML =
-                marked(
-                  //DOMPurify.sanitize(
-                    data
-                    //)
-                    );
+    let srcUrl = "https://raw.githubusercontent.com/wiki/needle-tools/ar-simulation/";
+    fetch('https://raw.githubusercontent.com/needle-tools/ar-simulation/master/Readme.md')
+      .then(response => response.text())
+      .then((data) => {
+          const renderer = {
+            image(href, title, text) {
+              console.log("found image: " + href);
+              let newHref = href.replace("../../wiki/", srcUrl);
+              return `<img src="${newHref}"">${text}</img>`;
+            }
+          };
+
+          console.log("marked use linkRewrite");
+          marked.use( { renderer } );
+          
+          document.getElementById('content').innerHTML =
+              marked(
+                //DOMPurify.sanitize(
+                  data
+                  //)
+              );
     });
   </script>
 </body>

@@ -2,26 +2,24 @@
 > Tailor-made tooling for Unity Developers.  
 > Seamless integration, minimally invasive.
 
-### [mirror](package-reference/)
-Reference repository for all unity packages,  
-but with history and changelogs.  
-
 ### [ar simulation](ar-simulation/)
 Build AR apps with confidence.  
 Test everything in Editor.  
 Non-invasive, drop-in solution.  
 
-### better fogbugz
-Chrome Extension to improve viewing  
-and managing your bug reports with Unity.  
+### [mirror](package-reference/)
+Reference repository for all unity packages,  
+with history, changelogs, Twitter bot and RSS feed.  
 
-<b>[Chrome Web Store](https://chrome.google.com/webstore/detail/better-unity-fogbugz/mhhihgagfmlmgdjijippdlabhnmifacj?hl=de)</b>
+### [better fogbugz](https://chrome.google.com/webstore/detail/better-unity-fogbugz/mhhihgagfmlmgdjijippdlabhnmifacj?hl=de)
+Chrome Extension for Unity Fogbugz to  
+improve viewing and managing your bug reports.  
 
-### package master
+### package master (Coming Soon™)
 Develop, publish and  
 maintain packages with ease.  
 
-<b>Coming soon</b>
+*Coming soon*
 
 
 ### contact

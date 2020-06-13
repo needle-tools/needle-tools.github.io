@@ -59,7 +59,7 @@ In fact, we tested a lot of configurations:
 
 | Unity Version | Input System |      |     | ARFoundation |             | Interaction Mode |                  |
 |---------------|--------------|------|-----|--------------|-------------|------------------|------------------|
-|               | Old          | Both | New | 3.1          | 4.0 | Game View        | Device Simulator<sup><a href="#table-sup-1">1</a></sup> |
+|               | Old          | Both | New | 3.1          | 4.0          | Game View        | Device Simulator<sup><a href="#table-sup-1">1</a></sup> |
 | 2019.3        | ✔️           | ✔️   | ✔️  | ✔️           | ✔️          | ✔️               | ✔️               |
 | 2020.1b       | ✔️           | ✔️   | ✔️  | ✔️           | ✔️          | ✔️               | ✔️               |
 | 2020.2a       | ✔️           | ✔️   | ✔️  | ✔️           | ✔️          | ✔️               | ✔️               |
@@ -67,9 +67,9 @@ In fact, we tested a lot of configurations:
 | Unity Version | Render Pipeline |           |                 | Platform |                   |               |
 |---------------|-----------------|-----------|-----------------|----------|-------------------|---------------|
 |               | Built-in        | URP       | HDRP<sup><a href="#table-sup-2">2</a></sup> | Editor   | iOS/Android Build<sup><a href="#table-sup-3">3</a></sup> | Desktop Build<sup><a href="#table-sup-4">4</a></sup>                |
-| 2019.3        | ✔️              | ✔️        | not tested      | ✔️      |  ❌                                         | not tested / future work     |
-| 2020.1b       | ✔️              | ✔️        | not tested      | ✔️      |  ❌                                         | not tested / future work     |
-| 2020.2a       | ✔️              | ✔️        | not tested      | ✔️      |  ❌                                         |                              |
+| 2019.3        | ✔️              | ✔️        | not tested      | ✔️      |  ✔️                                         | not tested / future work     |
+| 2020.1b       | ✔️              | ✔️        | not tested      | ✔️      |  ✔️                                         | not tested / future work     |
+| 2020.2a       | ✔️              | ✔️        | not tested      | ✔️      |  ✔️                                         | not tested / future work     |
 
 <sup id="table-sup-1">1</sup> Recommended. Feels very nice to use, and gives correct sizes for UI etc.  
 <sup id="table-sup-2">2</sup> HDRP is not supported by Unity on iOS/Android currently.  
@@ -101,6 +101,9 @@ This architecture has some advantages:
   (Device Simulator only supports single touch, since Input.SimulateTouch only supports one)
 - if your scene feels to dark / does not use environment lighting, make sure "Auto Generate" is on in Lighting Window or bake light data.  
   (spherical harmonics simulation will only work if the shaders are aware that they should use it)
+- ARFoundation 4 logs warnings in Editor:  
+  "No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a valid loader configuration exists in the XR project settings."
+  We have no idea what that means, [Link to Forum Thread](https://forum.unity.com/threads/warnings-in-editor-when-using-custom-xrsystem.908852/)
 
 ### But there is also MARS now!
 
@@ -147,6 +150,7 @@ This has lead to funny situations where we reporting bugs around usage in Editor
 - There's an open issue with Cubemap creation in Editor (necessary for Environment Probe simulation). [Issue Tracker](https://issuetracker.unity3d.com/product/unity/issues/guid/1215635)
 - Device Simulator disables Mouse input completely - we're working around that here but be aware when you try to create Android / iOS apps that also support mouse. [Forum Thread](https://forum.unity.com/threads/new-device-simulator-preview.751067/page-4#post-5952482)
 - in 2020.1 and 2020.2, even when you enable "New Input System", the Input System package is not installed in package manager. You have to install it manually. [Forum Thread](https://forum.unity.com/threads/new-input-system-not-installed-in-2020-1-after-enabling-it.908027/)
+- switching from a scene with Object Tracking to a scene with Image Tracking on device crashes Android apps (we'll report a bug soon)
 
 ### Contact
 

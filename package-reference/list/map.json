@@ -42,7 +42,7 @@
     "com.unity.addressables": {
         "forum": "https://forum.unity.com/threads/addressables-are-here.536304/",
         "blog": "https://blogs.unity3d.com/2019/07/15/addressable-asset-system/",
-        "docs": "https://docs.google.com/document/d/1hPLNLdrF0qAvjEJTpKf-cuO_d4FCV0H2cqBeP1Zo6mA/edit"
+        "extra": "https://docs.google.com/document/d/1hPLNLdrF0qAvjEJTpKf-cuO_d4FCV0H2cqBeP1Zo6mA/edit"
     },
     "com.unity.ads": {
         "forum": "https://forum.unity.com/forums/unity-ads.67/",
@@ -385,7 +385,7 @@
         "forum": "https://forum.unity.com/threads/addressables-are-here.536304/",
         "blog": "",
         "code":"https://github.com/Unity-Technologies/ScriptableBuildPipelineSamples",
-        "docs":"https://docs.google.com/document/d/1uuiEDV7WqpHEylzE4GQwOztCttrwPu6ak0kfELz6ilc/edit"
+        "extra":"https://docs.google.com/document/d/1uuiEDV7WqpHEylzE4GQwOztCttrwPu6ak0kfELz6ilc/edit"
     },
     "com.unity.shadergraph": {
         "forum": "https://forum.unity.com/forums/shader-graph.346/",
@@ -446,13 +446,13 @@
         "forum": "https://forum.unity.com/forums/project-tiny.151/",
         "blog": "https://blogs.unity3d.com/2018/12/05/project-tiny-preview-package-is-here/",
         "code": "https://github.com/Unity-Technologies/ProjectTinySamples",
-        "docs": "https://docs.google.com/document/d/1A8hen2hLFY5FLkC5gd3JP2Z-IpHfnAX-CpYLK3aOdwA/edit"
+        "extra": "https://docs.google.com/document/d/1A8hen2hLFY5FLkC5gd3JP2Z-IpHfnAX-CpYLK3aOdwA/edit"
     },
     "com.unity.tiny.all": {
         "forum": "https://forum.unity.com/forums/project-tiny.151/",
         "blog": "https://blogs.unity3d.com/2018/12/05/project-tiny-preview-package-is-here/",
         "code": "https://github.com/Unity-Technologies/ProjectTinySamples",
-        "docs": "https://docs.google.com/document/d/1A8hen2hLFY5FLkC5gd3JP2Z-IpHfnAX-CpYLK3aOdwA/edit"
+        "extra": "https://docs.google.com/document/d/1A8hen2hLFY5FLkC5gd3JP2Z-IpHfnAX-CpYLK3aOdwA/edit"
     },
     "com.unity.transport": {
         "forum": "https://forum.unity.com/forums/connected-games.26/",

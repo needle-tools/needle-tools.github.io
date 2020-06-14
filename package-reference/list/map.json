@@ -383,7 +383,9 @@
     },
     "com.unity.scriptablebuildpipeline": {
         "forum": "https://forum.unity.com/threads/addressables-are-here.536304/",
-        "blog": ""
+        "blog": "",
+        "code":"https://github.com/Unity-Technologies/ScriptableBuildPipelineSamples",
+        "docs":"https://docs.google.com/document/d/1uuiEDV7WqpHEylzE4GQwOztCttrwPu6ak0kfELz6ilc/edit"
     },
     "com.unity.shadergraph": {
         "forum": "https://forum.unity.com/forums/shader-graph.346/",

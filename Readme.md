@@ -25,5 +25,5 @@ Avoid common mistakes and performance issues.
 <b>[needle — tools for unity](https://needle.tools)</b>
 [@NeedleTools](https://twitter.com/NeedleTools)
 [@marcel_wiessler](https://twitter.com/marcel_wiessler)
-[@hybridherbst](https://twitter.com/hybdridherbst)
+[@hybridherbst](https://twitter.com/hybridherbst)
 [Say hi!](mailto:hi@needle.tools?subject=Hi!)

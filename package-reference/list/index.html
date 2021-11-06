@@ -141,7 +141,7 @@
     function loadDocument(packageName, el) {
         let href = el.getAttribute('href');
         let content = document.getElementById('changelog-content');
-        content.innerHTML = marked('#### LOADING');
+        content.innerHTML = marked.parse('#### LOADING');
         if(prev != null)
             prev.classList.remove('selected');
             prev = el;
@@ -153,7 +153,7 @@
                 if(el != prev)
                     return;
 
-                content.innerHTML = marked(data);
+                content.innerHTML = marked.parse(data);
                 
                 // check for additional data
                 var additional = additionalData[packageName];

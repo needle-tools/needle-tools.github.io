@@ -13,7 +13,7 @@ body {
     background-position: bottom;
     background-size: 50vw auto; */
     color: #ddd;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 100%;
     background: rgb(53,46,56);
     background: linear-gradient(0deg, rgba(53,46,56,1) 0%, rgba(49,55,36,1) 13%, rgba(51,51,51,1) 26%, rgba(34,34,34,1) 100%);
@@ -39,6 +39,7 @@ body {
     color: #888;
     font-size: 1.5em;
     font-style: italic;
+    max-width: 500px;
 }
 
 .contact {

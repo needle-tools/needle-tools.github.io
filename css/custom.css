@@ -21,7 +21,7 @@ body {
 
 #content {
     margin-top: 5em;
-    padding-left: 35%;
+    padding-left: 25%;
     width: 50%;
     /* max-width: 500px; */
     /* border: 1px solid; */
@@ -60,15 +60,23 @@ body {
     body {
         font-size: 2em;
     }
+
     #content {
         padding-left: 25%;
         max-width: 90%;
     }
+
     .quote {
-        max-width: 90%;
+        max-width: 95%;
     }
+
+    .contact {
+        max-width: 700px;
+    }
+
     .contact a {
         font-size: 2em;
+        line-height: 2em;
     }
 }
 
@@ -84,7 +92,7 @@ body {
     }
 
     .contact {
-        margin-left: 14px;
+        /* margin-left: 14px; */
     }
 
     .contact a {
@@ -110,7 +118,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     #content {
         padding-left: 10%;
     }

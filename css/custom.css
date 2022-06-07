@@ -45,6 +45,37 @@ body {
     max-width: 500px;
 }
 
+.teaser {
+    margin-top: 1em;
+}
+.teaser::before {
+    content: "😏 ";
+    margin-top: 1em;
+}
+
+.teaser a {
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #888;
+    /* opacity: .4; */
+    font-weight: 300;
+}
+
+.teaser a.l1:hover {
+    color: rgb(164, 112, 212);
+    /* font-style: italic; */
+}
+
+.teaser a.l2:hover {
+    color: rgb(235, 127, 163);
+    /* font-weight: 800; */
+}
+
+.teaser a.l3:hover {
+    color: rgb(181, 245, 62);
+}
+
 .contact {
     margin-top: 2em;
 }
@@ -115,6 +146,10 @@ body {
         bottom: 1em;
         font-size: 1.7em;
         color: #ddd;
+    }
+
+    .contact .mail a {
+        border: none;
     }
 }
 

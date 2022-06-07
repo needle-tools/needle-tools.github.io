@@ -46,11 +46,10 @@ body {
 }
 
 .teaser {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .teaser::before {
     content: "😏 ";
-    margin-top: 1em;
 }
 
 .teaser a {

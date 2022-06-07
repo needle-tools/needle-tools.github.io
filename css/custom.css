@@ -21,8 +21,11 @@ body {
 
 #content {
     margin-top: 5em;
-    padding-left: 25%;
+    padding-left: 35%;
     width: 50%;
+    /* max-width: 500px; */
+    /* border: 1px solid; */
+    max-width: 800px;
 }
 
 .logo {
@@ -44,6 +47,29 @@ body {
 
 .contact {
     margin-top: 2em;
+}
+
+
+@media (min-width: 1700px) {
+
+    h1,
+    h2 {
+        font-size: 3em;
+    }
+
+    body {
+        font-size: 2em;
+    }
+    #content {
+        padding-left: 25%;
+        max-width: 90%;
+    }
+    .quote {
+        max-width: 90%;
+    }
+    .contact a {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 1000px) {

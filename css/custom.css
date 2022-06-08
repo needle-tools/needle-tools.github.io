@@ -76,17 +76,17 @@ body {
 }
 
 .teaser a.l1:hover {
-    color: rgb(164, 112, 212);
+    color: rgb(164, 112, 212) !important;
     /* font-style: italic; */
 }
 
 .teaser a.l2:hover {
-    color: rgb(235, 127, 163);
+    color: rgb(235, 127, 163) !important;
     /* font-weight: 800; */
 }
 
 .teaser a.l3:hover {
-    color: rgb(181, 245, 62);
+    color: rgb(181, 245, 62) !important;
 }
 
 .contact {

@@ -75,6 +75,11 @@ body {
     animation: teaseColor3 5s infinite;
 }
 
+.teaser a:hover{
+    border-bottom: .1em dotted;
+
+}
+
 .teaser a.l1:hover {
     color: rgb(164, 112, 212) !important;
     /* font-style: italic; */

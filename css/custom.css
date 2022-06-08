@@ -216,6 +216,7 @@ body {
         bottom: 1em;
         font-size: 1.7em;
         color: #ddd;
+        margin: -.5em;
     }
 
     .contact .mail a {
@@ -242,6 +243,13 @@ body {
         width: 90%;
     }
 
+    .contact .mail a {
+        left: 0;
+        margin: .3em;
+    }
+}
+
+@media (max-width: 380px) {
     .contact {
         margin: none;
     }
@@ -252,9 +260,6 @@ body {
 
     .contact .mail a {
         display: inherit;
-        /* margin-left: -.5em; */
-        left: 0;
-        margin: -.8em;
     }
 }
 

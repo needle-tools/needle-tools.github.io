@@ -48,6 +48,7 @@ body {
 .teaser {
     margin-top: 2em;
 }
+
 .teaser::before {
     content: "😏 ";
 }
@@ -59,6 +60,18 @@ body {
     color: #888;
     /* opacity: .4; */
     font-weight: 300;
+}
+
+.teaser a.l1 {
+    animation: teaseColor1 4s infinite;
+}
+
+.teaser a.l2 {
+    animation: teaseColor2 3s infinite;
+}
+
+.teaser a.l3 {
+    animation: teaseColor3 5s infinite;
 }
 
 .teaser a.l1:hover {
@@ -74,6 +87,49 @@ body {
 .teaser a.l3:hover {
     color: rgb(181, 245, 62);
 }
+
+@keyframes teaseColor1 {
+    20% {
+        color: #888;
+    }
+
+    25% {
+        color: rgb(164, 112, 212);
+    }
+
+    40% {
+        color: #888;
+    }
+}
+
+@keyframes teaseColor2 {
+    20% {
+        color: #888;
+    }
+
+    25% {
+        color: rgb(235, 127, 163);
+    }
+
+    40% {
+        color: #888;
+    }
+}
+
+@keyframes teaseColor3 {
+    20% {
+        color: #888;
+    }
+
+    25% {
+        color: rgb(181, 245, 62);
+    }
+
+    40% {
+        color: #888;
+    }
+}
+
 
 .contact {
     margin-top: 2em;

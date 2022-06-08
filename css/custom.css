@@ -241,6 +241,12 @@ body {
     }
 }
 
+@media (max-width: 500px) and (max-height: 900px) {
+    .contact a {
+        display: inherit;
+    }
+}
+
 .fixed-sidebar {
     position: fixed;
     overflow-y: scroll;
@@ -318,6 +324,36 @@ a.unknown {
         margin-top: 2em;
     }
 
+    .contact {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+
+    #content {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-height: 650px) {
+
+    .teaser {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px),
+(max-width: 500px) and (max-height:300px) {
+
+    .contact,
+    .teaser {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 400px),
+(max-width: 650px) and (max-height: 730px) {
     .contact {
         display: none;
     }

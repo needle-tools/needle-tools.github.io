@@ -98,6 +98,10 @@ body {
     border: none;
 }
 
+.discord a {
+    color: #9f98ff;
+}
+
 
 @keyframes teaseColor1 {
     20% {

@@ -14,6 +14,7 @@ Seamless integration, minimally invasive.
 [@NeedleTools](https://twitter.com/NeedleTools)
 [@marcel_wiessler](https://twitter.com/marcel_wiessler)
 [@hybridherbst](https://twitter.com/hybridherbst)
+<span class="discord">[Discord](https://discord.gg/CFZDp4b)</span>
 <span class="mail">[🖐️ Get in touch!](mailto:hi@needle.tools?subject=Hi!)</span>
 
 </div>

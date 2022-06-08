@@ -31,6 +31,10 @@ body {
 .logo {
     margin-left: -22px;
 }
+/* .logo::before {
+    content: "🌵 ";
+} */
+
 
 .logo a {
     text-decoration: none;
@@ -52,6 +56,9 @@ body {
 
 .teaser::before {
     content: "😏 ";
+}
+.teaser:hover::before {
+    content: "🥰 ";
 }
 
 .teaser a {
@@ -114,6 +121,14 @@ body {
 
 .mail a {
     color: #d6ba84;
+}
+
+.mail a::before {
+    content: "🖐 ";
+}
+
+.mail a:hover::before {
+    content: "🤙 ";
 }
 
 @keyframes teaseColor1 {

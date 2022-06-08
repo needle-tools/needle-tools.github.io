@@ -1,4 +1,4 @@
-## <span class="logo"><a href="https://needle.tools">🌵needle</a></span>
+## <span class="logo"><a href="https://needle.tools">🌵 needle</a></span>
 
 <div class="quote">
 Tailor-made tooling for Creators.  
@@ -15,6 +15,6 @@ Seamless integration, minimally invasive.
 [@marcel_wiessler](https://twitter.com/marcel_wiessler)
 [@hybridherbst](https://twitter.com/hybridherbst)
 <span class="discord">[Discord](https://discord.gg/CFZDp4b)</span>
-<span class="mail">[🖐️ Get in touch!](mailto:hi@needle.tools?subject=Hi!)</span>
+<span class="mail">[Get in touch!](mailto:hi@needle.tools?subject=Hi!)</span>
 
 </div>

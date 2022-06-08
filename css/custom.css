@@ -14,7 +14,7 @@ body {
     background-position: bottom;
     background-size: 50vw auto; */
     color: #ddd;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     background: rgb(53, 46, 56);
     background: linear-gradient(0deg, rgba(53, 46, 56, 1) 0%, rgba(49, 55, 36, 1) 13%, rgba(51, 51, 51, 1) 26%, rgba(34, 34, 34, 1) 100%);
 }
@@ -40,9 +40,10 @@ body {
 
 .quote {
     color: #888;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-style: italic;
     max-width: 500px;
+    font-weight: 300;
 }
 
 .teaser {
@@ -58,8 +59,8 @@ body {
     margin: 0;
     padding: 0;
     color: #888;
-    /* opacity: .4; */
-    font-weight: 300;
+    font-size: 1.3em;
+    font-weight: 400;
 }
 
 .teaser a.l1 {
@@ -87,6 +88,15 @@ body {
 .teaser a.l3:hover {
     color: rgb(181, 245, 62);
 }
+
+.contact {
+    margin-top: 2em;
+}
+
+.contact a {
+    border: none;
+}
+
 
 @keyframes teaseColor1 {
     20% {
@@ -131,15 +141,6 @@ body {
 }
 
 
-.contact {
-    margin-top: 2em;
-}
-
-.contact a {
-    border: none;
-}
-
-
 @media (min-width: 1700px) {
 
     h1,
@@ -153,11 +154,12 @@ body {
 
     #content {
         padding-left: 25%;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .quote {
-        max-width: 95%;
+        max-width: 88%;
+        /* border: 1px solid; */
     }
 
     .contact {
@@ -177,7 +179,7 @@ body {
     }
 
     .logo {
-        margin-left: 0px;
+        /* margin-left: 0px; */
         font-size: 1.5em;
     }
 
@@ -213,8 +215,14 @@ body {
 }
 
 @media (max-width: 400px) {
+
+    .logo {
+        font-size: 1em;
+    }
+
     #content {
         padding-left: 10%;
+        width: 90%;
     }
 
     .contact {
@@ -305,7 +313,12 @@ a.unknown {
 
 /* mobile rotated */
 @media screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
-    .contact, .teaser {
+
+    #content {
+        margin-top: 2em;
+    }
+
+    .contact {
         display: none;
     }
 }

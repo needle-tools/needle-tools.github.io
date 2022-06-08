@@ -98,10 +98,18 @@ body {
     border: none;
 }
 
+.discord {
+    display: none;
+}
+
 .discord a {
     color: #9f98ff;
 }
 
+
+.mail a {
+    color: #d6ba84;
+}
 
 @keyframes teaseColor1 {
     20% {

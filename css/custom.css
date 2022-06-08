@@ -246,10 +246,11 @@ body {
     .contact .mail a {
         left: 0;
         margin: .3em;
+        font-size: inherit;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 280px) {
     .contact {
         margin: none;
     }

@@ -301,7 +301,7 @@ a.unknown {
 
 /* mobile rotated */
 @media screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
-    .contact {
+    .contact, .teaser {
         display: none;
     }
 }

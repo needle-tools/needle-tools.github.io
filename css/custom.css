@@ -20,8 +20,8 @@ body {
 }
 
 #content {
-    margin-top: 5em;
-    padding-left: 25%;
+    margin-top: 4%;
+    padding-left: 30%;
     width: 50%;
     /* max-width: 500px; */
     /* border: 1px solid; */
@@ -174,7 +174,7 @@ body {
 }
 
 
-@media (min-width: 1700px) and (min-height: 900px) {
+@media (min-width: 1600px) and (min-height: 900px) {
 
     h1,
     h2 {
@@ -191,7 +191,7 @@ body {
     }
 
     .quote {
-        max-width: 88%;
+        max-width: 18em;
         /* border: 1px solid; */
     }
 

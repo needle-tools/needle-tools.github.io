@@ -390,7 +390,7 @@ a.unknown {
 }
 
 @media screen and (max-height: 400px),
-(max-width: 650px) and (max-height: 730px) {
+(max-width: 650px) and (max-height: 610px) {
     .contact {
         display: none;
     }

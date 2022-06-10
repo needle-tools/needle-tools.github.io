@@ -62,12 +62,13 @@ body {
 }
 
 .teaser a {
-    border: none;
+    border-bottom: .2em dotted #444;
     margin: 0;
     padding: 0;
     color: #888;
     font-size: 1.3em;
     font-weight: 400;
+    padding-bottom: 3px;
 }
 
 .teaser a.l1 {
@@ -83,8 +84,7 @@ body {
 }
 
 .teaser a:hover{
-    border-bottom: .1em dotted;
-
+    border-bottom: .2em dotted;
 }
 
 .teaser a.l1:hover {
@@ -137,6 +137,7 @@ body {
     }
 
     25% {
+        border-color: #777;
         color: rgb(164, 112, 212);
     }
 
@@ -151,6 +152,7 @@ body {
     }
 
     25% {
+        border-color: #777;
         color: rgb(235, 127, 163);
     }
 
@@ -165,6 +167,7 @@ body {
     }
 
     25% {
+        border-color: #777;
         color: rgb(181, 245, 62);
     }
 

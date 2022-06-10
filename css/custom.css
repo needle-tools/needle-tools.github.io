@@ -62,7 +62,7 @@ body {
 }
 
 .teaser a {
-    border-bottom: .2em dotted #444;
+    border-bottom: .2em dotted #333;
     margin: 0;
     padding: 0;
     color: #888;
@@ -137,7 +137,7 @@ body {
     }
 
     25% {
-        border-color: #777;
+        border-color: #555;
         color: rgb(164, 112, 212);
     }
 
@@ -152,7 +152,7 @@ body {
     }
 
     25% {
-        border-color: #777;
+        border-color: #555;
         color: rgb(235, 127, 163);
     }
 
@@ -167,7 +167,7 @@ body {
     }
 
     25% {
-        border-color: #777;
+        border-color: #555;
         color: rgb(181, 245, 62);
     }
 
